@@ -40,6 +40,26 @@
     </div>
 
     <script>
+        const diceImg = document.getElementById("dice");
+        function rollDice() {
+            min=1;
+            max=7;
+            const randomNumber = Math.floor(Math.random() * (max-min)) + min;
+
+            if(randomNumber === 1){
+                diceImg.src = "./dice(1).png";
+            }  else if(randomNumber === 2){
+                diceImg.src = "./dice(2).png";
+            }else if(randomNumber === 3){
+                diceImg.src = "./dice(3).png";
+            }else if(randomNumber === 4){
+                diceImg.src = "./dice(4).png";
+            }else if(randomNumber === 5){
+                diceImg.src = "./dice(5).png";
+            }else{
+                diceImg.src = "./dice(6).png";
+            }
+        }
 
     </script>
     
